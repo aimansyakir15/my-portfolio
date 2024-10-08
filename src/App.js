@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Component/Navbar";
+import Hero from "./Component/Hero";
+import About from "./Component/About"; // Ensure this import is correct
+import Experience from "./Component/Experience";
+import Project from "./Component/Project";
+import Footer from "./Component/Footer";
 
 function App() {
+  console.log("Rendering App component");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex flex-col justify-between bg-[#161513] text-white">
+      <Navbar />
+      <main className="flex-grow">
+        <Hero />
+        <About />
+        <Experience />
+        <Project />
+      </main>
+      <Footer />
     </div>
   );
 }
