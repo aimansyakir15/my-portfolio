@@ -2,7 +2,7 @@
 Welcome to my personal portfolio website, showcasing my skills, experiences, and projects.
 
 ## Demo
-View Live Preview: TBU
+Live Site URL: https://aimansyakir.netlify.app/
 
 ### Desktop View:
 ![image](https://github.com/user-attachments/assets/24a7d728-9bac-4d3c-8cf2-793eefe56e5c)
