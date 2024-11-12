@@ -13,9 +13,9 @@ const ExperienceItem = ({ experience }) => {
     <li ref={ref} className="mb-10 ml-4">
       <div
     id="experience"
-        className={`absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-white dark:bg-blue-700 transition-opacity duration-700 ${
-          inView ? "opacity-100" : "opacity-0"
-        }`}
+      className={`absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-white dark:bg-blue-700 transition-opacity duration-700 ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
       ></div>
       <div
         className={`transition-transform duration-700 ease-out ${
