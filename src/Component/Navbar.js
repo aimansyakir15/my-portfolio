@@ -21,22 +21,22 @@ const Navbar = () => {
           } w-full md:w-auto`}
         >
           <li className="md:mx-4 my-2 md:my-0">
-            <a href="hero" className="hover:text-gray-400">
+            <a href="#hero" className="hover:text-gray-400">
               Home
             </a>
           </li>
           <li className="md:mx-4 my-2 md:my-0">
-            <a href="about" className="hover:text-gray-400">
+            <a href="#about" className="hover:text-gray-400">
               About
             </a>
           </li>
           <li className="md:mx-4 my-2 md:my-0">
-            <a href="experience" className="hover:text-gray-400">
+            <a href="#experience" className="hover:text-gray-400">
               Experience
             </a>
           </li>
           <li className="md:mx-4 my-2 md:my-0">
-            <a href="project" className="hover:text-gray-400">
+            <a href="#project" className="hover:text-gray-400">
               Project
             </a>
           </li>
