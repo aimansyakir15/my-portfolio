@@ -33,9 +33,13 @@ const Hero = () => {
         <span>I'm Muhammad Aiman Syakir Bin Mohd Zulkifli,</span>
       </h1>
       <p>
-        I am a recent graduate looking for an entry/junior-level Front-end
-        Developer position. I have just completed a 6-month internship at MIMOS
-        Berhad under the Artificial Intelligence Department.
+        I am a recent graduate actively pursuing an entry/junior-level Front-end
+        Developer position. I am currently working as an TM One Protégé at
+        Telekom Malaysia Berhad, where I am gaining hands-on experience in IT
+        operations and solutions. Previously, I completed a 6-month internship
+        at MIMOS Berhad under the Artificial Intelligence Department, where I
+        developed skills in AI integration, data visualization, and web
+        development.
       </p>
       <div className="hero-action">
         <button onClick={handleDownload} className="hero-resume">
