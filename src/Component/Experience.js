@@ -1,6 +1,6 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import ExperienceItem from "./ExperienceItem";
+import { useInView } from "react-intersection-observer";
 
 const Experience = () => {
   console.log("Rendering Experience component");
@@ -14,7 +14,12 @@ const Experience = () => {
     {
       title: "TM Protégé at Telekom Malaysia Berhad",
       date: "October 2024 - Present",
-      description: ["TBU"],
+      description: [
+        "Assisted in conducting on-site cabling surveys to assess the infrastructure for network installation and maintenance.",
+        "Collaborated with subcontractor to inspect, measure, and document cable routes, including power and data cables, ensuring compliance with safety standards and operational requirements.",
+        "Identified potential obstacles and suggested optimal cabling solutions to minimize installation costs and improve network performance.",
+        "Gained practical knowledge of structured cabling systems and site survey methodologies.",
+      ],
     },
     {
       title: "Internship at MIMOS Berhad",
@@ -59,11 +64,11 @@ const Experience = () => {
         <h1 className="text-2xl md:text-4xl font-bold">Experience</h1>
         <hr className="title-line mx-auto md:mx-0 my-4 md:my-6" />
       </div>
-      <div className="relative w-full">
+      <ol className="relative border-l border-[#FFD700] dark:border-[FFD700]">
         {experiences.map((experience, index) => (
           <ExperienceItem key={index} experience={experience} />
         ))}
-      </div>
+      </ol>
     </div>
   );
 };

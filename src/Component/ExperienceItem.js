@@ -10,26 +10,33 @@ const ExperienceItem = ({ experience }) => {
   });
 
   return (
-    <div
-      id="experience"
-      ref={ref}
-      className={`flex items-start mb-12 transform transition-transform duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
-    >
-      <div className="flex-shrink-0 w-4 h-4 bg-yellow-500 rounded-full mt-2"></div>
-      <div className="ml-8">
-        <h2 className="text-1xl md:text-2xl font-bold">{experience.title}</h2>
-        <p className="text-sm md:text-base text-blue-700">{experience.date}</p>
-        <ul className="list-disc pl-5 mt-2">
+    <li ref={ref} className="mb-10 ml-4">
+      <div
+        id="experience"
+        className={`absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-white dark:bg-blue-700 transition-opacity duration-700 ${
+          inView ? "opacity-100" : "opacity-0"
+        }`}
+      ></div>
+      <div
+        className={`transition-transform duration-700 ease-out ${
+          inView ? "transform bounce-in" : "opacity-0"
+        }`}
+      >
+        <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-blue-700">
+          {experience.date}
+        </time>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+          {experience.title}
+        </h3>
+        <ul className="list-disc pl-5 mt-2 text-base font-normal">
           {experience.description.map((item, index) => (
-            <li key={index} className="text-sm md:text-base mt-2">
+            <li key={index} className="mt-2">
               {item}
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </li>
   );
 };
 

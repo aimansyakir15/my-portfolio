@@ -18,7 +18,7 @@ const Project = () => {
       name: "REST Countries API with color theme switcher",
       description:
         "This project showcases a responsive web application that utilizes the REST Countries API to fetch and display comprehensive information about countries around the world. Users can explore details such as country names, flags, population, and more, all presented in a visually appealing format.",
-      url: "",
+      url: "https://github.com/aimansyakir15/REST-Countries-API",
     },
     {
       name: "Discount Calculator",
