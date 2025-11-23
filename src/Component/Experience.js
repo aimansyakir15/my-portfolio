@@ -12,8 +12,19 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Application Developer at Protech Digital Sdn. Bhd.",
+      date: "January 2025 - Present",
+      description: [
+        "Involved in the development, maintenance and improvement of E-Tanah and MyLand systems",
+        "Worked on fixing system issues and implementing new features based on user requirements",
+        "Performed data patching in production environments using SQL queries to maintain data accuracy",
+        "Improved codebase quality by addressing SonarQube issues, ensuring compliance with clean code and security standards",
+        "Participated in testing and debugging to ensure system reliability and user satisfaction",
+      ],
+    },
+    {
       title: "TM Protégé at Telekom Malaysia Berhad",
-      date: "October 2024 - Present",
+      date: "October 2024 - January 2025",
       description: [
         "Assisted in conducting on-site cabling surveys to assess the infrastructure for network installation and maintenance.",
         "Collaborated with subcontractor to inspect, measure, and document cable routes, including power and data cables, ensuring compliance with safety standards and operational requirements.",

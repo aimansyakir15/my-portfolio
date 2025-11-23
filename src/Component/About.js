@@ -22,12 +22,13 @@ const About = () => {
         <div className="about-content w-full md:w-1/2 mb-8 md:mb-0">
           <h3 className="text-xl md:text-2xl font-bold">Get to know me!</h3>
           <p className="mt-4 text-sm md:text-base leading-relaxed">
-            A fresh graduate from Management & Science University (MSU) who is
-            eager to learn and passionate about software development, especially
-            front-end technologies. I am a team player that is reliable in
-            completing the tasks assigned. I have just finished my internship at
-            MIMOS Berhad, looking for an opportunity to start my career for the
-            purpose of gaining meaningful experience and useful knowledge.
+            Application Developer at Protech Digital Sdn Bhd, currently focused
+            on the development and enhancement of the E-Tanah government
+            project. I specialize in building and maintaining enterprise web
+            applications that serve critical land administration functions. My
+            work involves implementing new features, optimizing system
+            performance, and ensuring the reliability of platforms that handle
+            essential government services for the public.
           </p>
         </div>
         <div className="about-skills w-full md:w-1/2">

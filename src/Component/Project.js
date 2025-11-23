@@ -9,22 +9,39 @@ const Project = () => {
 
   const projects = [
     {
+      name: "E-Tanah System",
+      description:
+        "Enterprise web application for land administration and management. Involved in full-stack development, maintenance, and implementation of new features for this critical government platform.",
+      url: "#",
+      linkText: "Confidential",
+    },
+    {
+      name: "MyLand System",
+      description:
+        "Government land management system focused on data accuracy and user satisfaction. Worked on bug fixes, data patching, and code quality improvements using SonarQube standards.",
+      url: "https://myland.gov.my/myland-sso/login?service=https%3A%2F%2Fmyland.gov.my%2Fmyland-landing%2Flogin%2Fcas",
+      linkText: "Live System",
+    },
+    {
       name: "E-Portfolio Content Management System (Final Year Project)",
       description:
         "This web application enables users/lecturers to digitally record and store their teaching portfolios. It serves as a repository where users/lecturers can manage their teaching and learning content in an e-portfolio system.",
       url: "https://github.com/aimansyakir15/E-Portfolio-Content-Management-System.git",
+      linkText: "GitHub",
     },
     {
       name: "REST Countries API with color theme switcher",
       description:
         "This project showcases a responsive web application that utilizes the REST Countries API to fetch and display comprehensive information about countries around the world. Users can explore details such as country names, flags, population, and more, all presented in a visually appealing format.",
       url: "https://github.com/aimansyakir15/REST-Countries-API",
+      linkText: "GitHub",
     },
     {
       name: "Discount Calculator",
       description:
         "This program is designed to calculate the discount and final price for purchases at Coffee Outlet. The outlet offers various discount tiers based on the total purchase amount.",
       url: "https://github.com/aimansyakir15/discount-calculator",
+      linkText: "GitHub",
     },
   ];
 
@@ -76,14 +93,19 @@ const Project = () => {
                   <td className="px-6 py-4 text-sm text-white border border-white">
                     {project.description}
                   </td>
-                  <td className="px-6 py-4 text-sm text-blue-400 border border-white">
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GitHub
-                    </a>
+                  <td className="px-6 py-4 text-sm border border-white text-center">
+                    {project.url !== "#" ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:underline"
+                      >
+                        {project.linkText}
+                      </a>
+                    ) : (
+                      <span className="text-gray-400">{project.linkText}</span>
+                    )}
                   </td>
                 </tr>
               ))}

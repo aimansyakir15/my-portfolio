@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Hero.css";
 import profile_img from "../assets/profilePic.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,23 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
+  const [displayText, setDisplayText] = useState("");
+  const fullText = "Application Developer";
+
+  useEffect(() => {
+    let i = 0;
+    const typingEffect = setInterval(() => {
+      if (i < fullText.length) {
+        setDisplayText(fullText.slice(0, i + 1));
+        i++;
+      } else {
+        clearInterval(typingEffect);
+      }
+    }, 100);
+
+    return () => clearInterval(typingEffect);
+  }, []);
+
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/CV-MUHAMMAD AIMAN SYAKIR.pdf";
@@ -15,45 +32,56 @@ const Hero = () => {
     document.body.removeChild(link);
   };
 
-  const handleGitHub = () => {
-    window.open("https://github.com/aimansyakir15", "_blank");
-  };
-
-  const handleLinkedIn = () => {
-    window.open(
-      "https://www.linkedin.com/in/muhammad-aiman-syakir-mohd-zulkifli-9a617622a/",
-      "_blank"
-    );
-  };
-
   return (
     <div className="hero" id="hero">
-      <img src={profile_img} alt="Profile" className="profile-img" />
-      <h1>
-        <span>I'm Muhammad Aiman Syakir Bin Mohd Zulkifli,</span>
-      </h1>
-      <p>
-        I am a recent graduate actively pursuing an entry/junior-level Front-end
-        Developer position. I am currently working as an TM One Protégé at
-        Telekom Malaysia Berhad, where I am gaining hands-on experience in IT
-        operations and solutions. Previously, I completed a 6-month internship
-        at MIMOS Berhad under the Artificial Intelligence Department, where I
-        developed skills in AI integration, data visualization, and web
-        development.
-      </p>
-      <div className="hero-action">
-        <button onClick={handleDownload} className="hero-resume">
-          My Resume
-          <FontAwesomeIcon icon={faDownload} style={{ marginLeft: "10px" }} />
-        </button>
-        <button onClick={handleGitHub} className="hero-git">
-          GitHub
-          <FontAwesomeIcon icon={faGithub} style={{ marginLeft: "10px" }} />
-        </button>
-        <button onClick={handleLinkedIn} className="hero-contact">
-          Let's Connect!
-          <FontAwesomeIcon icon={faLinkedin} style={{ marginLeft: "10px" }} />
-        </button>
+      <div className="hero-content">
+        <div className="profile-container">
+          <img src={profile_img} alt="Profile" className="profile-img" />
+          <div className="profile-glow"></div>
+        </div>
+
+        <div className="hero-text">
+          <h1>
+            <span className="hero-greeting">Hi, I'm Muhammad Aiman Syakir</span>
+            <br />
+            <span className="hero-title">{displayText}</span>
+            <span className="cursor">|</span>
+          </h1>
+
+          <p className="hero-description">
+            Application Developer at Protech Digital Sdn Bhd, actively involved
+            in the development and maintenance of enterprise web applications. I
+            contribute to government projects such as E-Tanah and MyLand System,
+            focusing on feature development, system optimization, bug fixes, and
+            overall platform reliability.
+          </p>
+
+          <div className="hero-action">
+            <button onClick={handleDownload} className="btn btn-primary">
+              Download CV
+              <FontAwesomeIcon icon={faDownload} className="ml-2" />
+            </button>
+            <button
+              onClick={() =>
+                window.open("https://github.com/aimansyakir15", "_blank")
+              }
+              className="btn btn-secondary"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </button>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/muhammad-aiman-syakir-mohd-zulkifli-9a617622a/",
+                  "_blank"
+                )
+              }
+              className="btn btn-secondary"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

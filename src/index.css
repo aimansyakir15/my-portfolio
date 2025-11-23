@@ -10,16 +10,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.light-theme {
+  --bg-primary: #ffffff;
+  --text-primary: #161513;
+  --bg-secondary: #f8f9fa;
+}
+
 body {
-  height: 100vh;
-  background-color: #161513;
-  color: white;
-  font-family: 'outfit', sans-serif;
-  box-sizing: border-box;
-  position: relative;
-  line-height: 1.5;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
 }
 
 @keyframes bounceIn {

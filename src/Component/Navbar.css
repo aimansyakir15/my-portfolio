@@ -12,3 +12,36 @@
     gap: 60px;
     font-size: 20px;
 }
+
+/* Add to your existing index.css */
+:root {
+  --bg-primary: #161513;
+  --text-primary: #ffffff;
+  --bg-secondary: #1a1917;
+}
+
+.light-theme {
+  --bg-primary: #ffffff;
+  --text-primary: #161513;
+  --bg-secondary: #f8f9fa;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+/* Update existing body styles to use CSS variables */
+body {
+  height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'outfit', sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+}
