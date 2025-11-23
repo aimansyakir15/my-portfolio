@@ -5,13 +5,14 @@ Welcome to my personal portfolio website, showcasing my skills, experiences, and
 Live Site URL: https://aimansyakir.netlify.app/
 
 ### Desktop View:
-![Hero](https://github.com/user-attachments/assets/a97c787a-fbbf-4a54-89b9-94f0d544d934)
+<img width="1898" height="1016" alt="Hero" src="https://github.com/user-attachments/assets/477fe619-e56d-4b92-a49c-161489f6a7f8" />
 
-![About](https://github.com/user-attachments/assets/9ec9868d-7e42-40fb-8d52-53d464d95fdb)
+<img width="1896" height="740" alt="About" src="https://github.com/user-attachments/assets/3d17606a-8aca-4b64-84a4-69f82fc69463" />
 
-![Experience](https://github.com/user-attachments/assets/4533a31c-8fca-46c9-a621-d7fee1d2efe2)
+<img width="1896" height="995" alt="Experience" src="https://github.com/user-attachments/assets/94c52947-48e5-40d6-b259-5700d9364d00" />
 
-![Project](https://github.com/user-attachments/assets/a5dcb5c7-28a8-407a-a0f0-ec36c7f5f6dd)
+<img width="1897" height="1007" alt="Project" src="https://github.com/user-attachments/assets/61480e06-f015-4800-b1ad-a08a3bd12e03" />
+
 
 ## Sections
 - Summary
